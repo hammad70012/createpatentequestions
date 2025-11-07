@@ -148,7 +148,7 @@ def main():
 
     print(f"🔹 Total: {len(questions)} | Remaining: {len(remaining)}")
 
-    batch_size = 10
+    batch_size = 25
     for i in tqdm(range(0, len(remaining), batch_size), desc="Batch Translating"):
         batch = remaining[i:i + batch_size]
         tr_list = ask_openrouter_batch(batch)
@@ -196,3 +196,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
