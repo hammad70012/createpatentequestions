@@ -10,7 +10,7 @@ API_KEY = os.getenv("OPENROUTER_KEY")
 MODEL = "deepseek/deepseek-chat-v3-0324:free"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = r"C:\Users\Alleg\Desktop\Projects\patente\QuizPatenteB-main\quizPatenteB2023.json"
+INPUT_FILE = os.path.join(BASE_DIR, "quizPatenteB2023.json")
 OUTPUT_FILE = os.path.join(BASE_DIR, "..", "data", "questions_multi_explained_batch.json")
 
 URL = "https://openrouter.ai/api/v1/chat/completions"
